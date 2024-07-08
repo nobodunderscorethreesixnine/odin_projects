@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.game-section {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#game-round {
+	font-size: x-large;
+	font-weight: bolder;
+}
+
+img {
+	width: 200px;
+}
+
+.game-info p {
+	color: red;
+	font-family: "Gill Sans";
+	font-weight: bolder;
+	font-size: xx-large;
+	font-style: italic;
+	text-shadow: -2px 1px black;
+}
+
+.game-info,
+.spr-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 80%;
+}
+
+.buttons {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.buttons button {
+	font-family:verdana;
+	border: none;
+	outline: none;
+	width: 200px;
+	background-color: red;
+	color: white;
+	margin: 20px;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.buttons button:hover {
+	background: linear-gradient(to left, red, orange);
+	color: black;
+}
+
+.buttons button:active {
+	transform: translate(-2px);
+}
+
+#winner-display {
+	color: darkcyan;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+#play-again {
+	display: none;
+	color: orange;
+	background-color: whitesmoke;
+	width: 200px;
+	padding: 10px;
+	font-size: large;
+	border: none;
+	box-shadow: 0 0 5px 0 red;
+}
+
+#play-again:hover {
+	box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.497);
+}
+
+#play-again:active {
+	box-shadow: 0 0 6px 0 rgb(75, 234, 7);
+}
