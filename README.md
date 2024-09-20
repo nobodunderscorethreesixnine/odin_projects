@@ -3,3 +3,6 @@ https://nobodunderscorethreesixnine.github.io/odin_projects/rock_paper_scissor/i
 
 link for Etch-a-Sketch project
 https://nobodunderscorethreesixnine.github.io/odin_projects/etch_a_sketch/index.html
+
+link for Calculator project
+https://nobodunderscorethreesixnine.github.io/odin_projects/calculator/index.html
