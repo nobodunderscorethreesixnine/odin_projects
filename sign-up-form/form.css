@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'jersey 10';
+    src: url(fonts/Jersey_10/Jersey10-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling sections */
+.sign-up-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sign-up-container .left {
+    width: 40%;
+    position: relative;
+}
+
+.left .black-bg {
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 180px;
+}
+
+.left #bg-img {
+    width: 100%;
+    height: 100%
+}
+
+.left .logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    left: 150px;
+}
+
+.logo img {
+    width: 90px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-family: 'jersey 10';
+    font-size: 7rem;
+    color: white;
+    letter-spacing: 0.3rem
+}
+
+/* styling right side */
+.sign-up-container .right {
+    background-color: #edf2f8;
+    width: 60%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+
+.right header {
+    max-inline-size: 66ch;
+    padding: 0px 30px;
+    font-size: large;
+    word-spacing: 0.1em;
+    font-family:cursive;
+}
+
+
+.right header h4:last-child {
+    margin-top: 20px
+}
+
+.right .form-container {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.form-container h3 {
+    margin-bottom: 30px;
+    font-weight: medium;
+}
+
+.form-container .form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form label {
+    display: block;
+}
+
+.form .right-side-form {
+    margin-left: 4rem;
+}
+
+.form .left-side-form label,
+.form .right-side-form label {
+    font-size: smaller;
+}
+
+.form .left-side-form input,
+.form .right-side-form input {
+    padding: 7px;
+    width: 14rem;
+    margin-bottom: 12px;
+    font-size: medium;
+}
+
+.form input[type='password']:invalid ,
+.form input[type='email']:invalid,
+.form input[type='tel']:invalid{
+    border: 2px solid red;
+}
+
+.form input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px 0px gray;
+}
+
+/* styling footer  */
+footer {
+    padding: 0px 30px;
+}
+
+footer button {
+    width: 180px;
+    padding: 12px 20px;
+    background-color: #596D48;
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px gray;
+}
+
+footer button:hover{
+    background-color:#596d48f3
+}
+
+footer button:active{
+    background-color: #596d48e5;
+    transform: scaleX(1)
+}
+
+footer h5 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+footer h5>a {
+    color: #596D48;
+    text-decoration: none;
+    /* font-size:1.3rem; */
+}
+
+

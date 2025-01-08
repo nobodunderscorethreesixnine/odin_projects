@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigin Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+</head>
+
+<body>
+    <div class="sign-up-container">
+        <section class="left">
+            <div class="black-bg"></div> <!-- displaying black background for logo -->
+            <img src="images/leaf_bg.jpg" alt="leaf pic" id="bg-img">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="logo pic">
+                <h1>ODIN</h1>
+            </div>
+        </section>
+        <section class="right">
+            <header>
+                <strong>This is not a real online service! You know you need something like this in your life to help
+                    you realize your deepest dreams.
+                </strong>
+                <h4>Sign up now to get started.</h4>
+                <h4>You know yo want to</h4>
+            </header>
+            <!-- from section -->
+            <main class="form-container">
+                <h3>Let's do this!</h3>
+                <form method="" class="form">
+                    <div class="left-side-form">
+
+                        <p>
+                            <label for="fName">FIRST NAME</label>
+                            <input type="text" name="first_name" id="fName" placeholder="Thor">
+                        </p>
+                        <p>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="doe@gmail.com">
+                        </p>
+                        <p>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" pattern=".{6,}">
+                        </p>
+                    </div>
+                    <div class="right-side-form">
+                        <p>
+                            <label for="lName">LAST NAME</label>
+                            <input type="text" name="last_name" id="lName" placeholder="Odinson">
+                        </p>
+                        <p>
+                            <label for="phn-nmbr">PHONE NUMBER</label>
+                            <input type="tel" name="phn-nmbr" id="phn-nmbr" pattern="\d+" placeholder="039948333" minlength="9" maxlength="12">
+                        </p>
+                        <p>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" minlength="6">
+                        </p>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <button type="submit">Create Account</button>
+                <h5>Already have an account? <a href="">Log in</a></h5>
+            </footer>
+        </section>
+    </div>
+</body>
+and watch other codes in TOP see how they have done 
+and before pushing github first push to another repo(make new repo) and see if the images , font link are 
+displaying correctly.
+</html>
