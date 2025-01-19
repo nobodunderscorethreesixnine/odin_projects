@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.4fr repeat(3, 1fr);
+    grid-template-areas:
+        'side-bar nav-bar  nav-bar nav-bar'
+        'side-bar project-hdr . announcement-hdr'
+        'side-bar project1 project2 vip'
+        'side-bar project3 project4 vip'
+        'side-bar project5 project6 vip'
+}
+
+.dashboard .side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 20px 190px 20px;
+    background-color: #1992d4;
+    color: white;
+    grid-area: side-bar;
+}
+
+.side-bar .logo img {
+width: 3rem;
+}
+
+.options-1>div,
+.logo,
+.options-2>div {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    margin: 20px;
+}
+
+.options-1 img,
+.options-2 img {
+    width: 1.6rem;
+}
+
+/* nav-bar */
+.dashboard .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: nav-bar;
+    padding:0 2rem;
+    background-color: white;
+}
+
+/* nav-bar nav-1st */
+.nav-bar .nav-1st {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-1st div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-1st #search-bar {
+    width: 600px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.234);
+    padding: 5px 10px;
+    font-size: medium;
+}
+
+.nav-1st div img {
+    width: 1.5rem;
+}
+
+.nav-bar #nav-1st-logo {
+    width: 100px;
+}
+
+/* nav-bar  nav-2nd*/
+.nav-bar .nav-2nd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-2nd .profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile #nav-2nd-logo {
+    width: 100px;
+}
+
+.nav-2nd>div>button {
+    width: 6rem;
+    text-align: center;
+    background-color: #1992d4;
+    border: none;
+    border-radius: 20px;
+    padding: 11px 18px;
+    color: white;
+    font-size: medium;
+    margin-left: 20px;
+}
+
+/* main section - projects */
+#project-hdr {
+    grid-area: project-hdr;
+    align-self: end;
+    margin: 0px 0px 7px 10px;
+}
+
+.project-cards {
+    justify-self: end;
+    width: 400px;
+    margin: 10px;
+    border-radius: 8px;
+    border-left: 9px solid orange;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-cards div>p {
+    max-inline-size: 66ch;
+    color: gray;
+    font-size: medium;
+}
+
+.project-cards .review-options {
+    align-self: flex-end;
+}
+
+.project-cards>.review-options>img {
+    width: 1.6rem;
+}
+
+.project-cards>.review-options>img:nth-child(2) {
+    margin: 0px 10px;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+.project4 {
+    grid-area: project4;
+}
+
+.project5 {
+    grid-area: project5;
+}
+
+.project6 {
+    grid-area: project6;
+}
+
+.project-cards p {
+    max-inline-size: 66ch;
+    color: gray;
+    font-size: medium;
+}
+
+/* Announcements section */
+#announcement-hdr {
+    grid-area: announcement-hdr;
+    align-self: end;
+    margin: 0px 0px 7px 10px;
+}
+
+.announcement {
+    grid-area: vip;
+    align-self:start;
+    margin: 10px 10px 0px 10px;
+    background-color: white;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    width:270px
+}
+
+.announcement strong{
+    font-size:large;
+}
+.announcement>div>p {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.announcement hr {
+    color: gray;
+    width: 240px;
+}
+
+/* trending section */
+#trending-hdr {
+    grid-area: vip;
+    align-self: center;
+    justify-self:center;
+    margin-bottom:15px;
+}
+
+.trending-cont {
+    grid-area: vip;
+    align-self: end;
+    margin:10px;
+    width:270px;
+}
+.trending-cont .trending{
+    background-color:white;
+    border-radius:8px;
+    padding:10px;
+    display:grid;
+    grid-template-columns:0.5fr 1fr;
+    gap:1.4rem;
+}
+
+.trending img{
+    width:2.3rem;
+    justify-self: end;
+    align-self: center;
+}
