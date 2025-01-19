@@ -9,3 +9,6 @@ https://nobodunderscorethreesixnine.github.io/odin_projects/calculator/index.htm
 
 link for sign-up-form project
 https://nobodunderscorethreesixnine.github.io/odin_projects/sign-up-form/index.html
+
+link for admin-dashboard project
+https://nobodunderscorethreesixnine.github.io/odin_projects/Admin_dashboard/index.html
