@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta player1="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tic_tac_toe.css">
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+    <script src="tic_tac_toe.js" defer></script>
+</head>
+
+<body>
+    <section class="game">
+        <div class="layer">
+            <h1 id="header">Tic Tac Toe</h1>
+            <section class="assign-wpn">
+                <span id="player-1-wpn">X</span>
+                <div><img src="images/re-try.png" alt="re-try icon" class="tgl-wpn"></div>
+                <span id="player-2-wpn">O</span>
+            </section>
+            <form>
+                <input type="text" id="player1" placeholder="Player - 1 Name" maxlength="5" autofocus>
+                <input type="text" id="player2" placeholder="Player - 2 Name" maxlength="5">
+                <input type="button" value="Submit Name" class="submit-btn">
+            </form>
+            <h1 id="show-error"></h1>
+        </div>
+        <!-- game board -->
+        <section class="display-players">
+            <h1> <span id="player-name-1"></span> <span id="player-1-points">0</span></h1>
+            <strong id="player-turns"></strong>
+            <h1> <span id="player-name-2"></span> <span id="player-2-points">0</span></h1>
+        </section>
+        <strong id="display-winner"> X Wins</strong>
+        <div class="game-board">
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+            <button id="box"></button>
+        </div>
+
+        <footer class="footer">
+            <div>
+                <button id="reset-btn">Restart Game</button>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

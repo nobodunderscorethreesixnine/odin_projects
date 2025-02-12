@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Wooden Log';
+    src: url(fonts/wooden_log.ttf)
+}
+
+@font-face {
+    font-family: 'Drift Wood';
+    src: url(fonts/Driftwood.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+.game {
+    background-image: url('/tic_tac_toe/images/bg.jpg');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.game .layer {
+    z-index: 1;
+    position: absolute;
+    opacity: 0.9;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.layer #header {
+    font-family: Drift Wood;
+    font-size: 4rem;
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    background-clip: text;
+}
+
+.layer .assign-wpn {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+
+}
+
+.assign-wpn #player-1-wpn,
+#player-2-wpn {
+    font-family: Wooden Log;
+    color: rgb(255, 102, 0);
+    font-size: 4rem;
+    width: 3rem;
+    text-align: center;
+}
+
+.assign-wpn #player-2-wpn {
+    color: red;
+}
+
+.tgl-wpn {
+    width: 70px;
+    height: 70px;
+    box-shadow: 1px 1px 10px 2px green;
+    border-radius: 50%;
+    transition: width 0.3s ease-in;
+}
+
+.tgl-wpn:active {
+    width: 60px;
+}
+
+.layer form {
+    display: grid;
+    grid-template-areas:
+        'name1 name2'
+        'btn btn';
+    gap: 2rem;
+    justify-items: center;
+
+
+}
+
+.layer #player1,
+.layer #player2 {
+    text-align: center;
+    height: 55px;
+    padding: 10px;
+    font-size: large;
+    outline: none;
+    opacity: 0.6;
+    border: none;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in;
+}
+
+.layer #player1:hover,
+.layer #player2:hover {
+    box-shadow: 2px 2px 0px 0px rgb(194, 194, 194);
+
+}
+
+.layer #player1:focus,
+.layer #player2:focus {
+    box-shadow: none;
+    border-bottom: 8px solid red;
+
+}
+
+.layer #player1::placeholder,
+.layer #player2::placeholder {
+    color: rgb(153, 161, 187);
+}
+
+.layer .submit-btn {
+    grid-area: btn;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+}
+
+.layer #show-error {
+    visibility: hidden;
+    height: 2rem;
+    color: red;
+}
+
+.game .display-players {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.display-players h1 span {
+    font-family: Wooden Log;
+    font-size: 60px;
+    color: rgb(243, 186, 120);
+}
+
+.display-players #player-turns {
+    color: hsl(14, 76%, 52%);
+    font-size: 2rem;
+    width: 250px;
+}
+
+.game #display-winner {
+    font-family: Wooden Log;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    visibility: hidden;
+    transition: all 1s ease-in;
+
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.game-board #box {
+    font-family: Wooden Log;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 -1px 4px 0px #581500, 0 1px 4px 0px #581500;
+    font-size: 60px;
+    height: 100px;
+    width: 120px;
+    background-color: #694f47a2;
+}
+
+#box:disabled {
+    background-color: #694f47a2;
+    color: black;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #694f47a2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer #reset-btn {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: large;
+    background-color: #694f47a2;
+    border: none;
+    border: 1px solid #eb3f0ba2;
+    color: rgb(140, 167, 44);
+}
+
+#reset-btn:hover {
+    transform: scale(1.2);
+    transition: scale 3s ease-in-out;
+    cursor: pointer;
+}
+
+#reset-btn:active {
+    border: 1px solid #581500;
+}
