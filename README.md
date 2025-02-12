@@ -16,3 +16,5 @@ https://nobodunderscorethreesixnine.github.io/odin_projects/Admin_dashboard/inde
 link for Library project
 https://nobodunderscorethreesixnine.github.io/odin_projects/Library/index.html
 
+link for Tic-Tac-Toe project
+https://nobodunderscorethreesixnine.github.io/odin_projects/tic_tac_toe/index.html
