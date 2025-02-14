@@ -11,12 +11,14 @@ const submitBtn = document.querySelector('#submit-btn');
 // array
 const myLibrary = [];
 
-function Book(title, author, pages, read) {
+class Book{
     // constructor
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 addBook.addEventListener('click', () => {
@@ -25,8 +27,6 @@ addBook.addEventListener('click', () => {
 
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(bookAuthor.value)
-    console.log(dialogBox);
     dialogBox.close()
     // calling addBookToLibrary()
     addBookToLibrary()
@@ -52,7 +52,6 @@ function addBookToLibrary() {
 function render() {
     library.textContent = ''
     myLibrary.forEach((book, indx) => {
-        console.log(book, indx)
         let divTag = document.createElement('div');
         divTag.classList.add('book-container');
         divTag.innerHTML = `
@@ -71,7 +70,6 @@ function render() {
 function dltBook(indx) {
     dltIndex = indx;
     myLibrary.splice(dltIndex, 1)
-    console.log(myLibrary);
     render()
 }
 
