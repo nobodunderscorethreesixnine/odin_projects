@@ -18,3 +18,6 @@ https://nobodunderscorethreesixnine.github.io/odin_projects/Library/index.html
 
 link for Tic-Tac-Toe project
 https://nobodunderscorethreesixnine.github.io/odin_projects/tic_tac_toe/index.html
+
+likn for Resturant Project 
+https://nobodunderscorethreesixnine.github.io/resturant_page_odin_project/
