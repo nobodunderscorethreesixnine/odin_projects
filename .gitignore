@@ -1,0 +1,5 @@
+.vscode
+
+#webpack and node files/dirs
+node_modules
+dist
