@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <dialog hidden>
+        <div>
+            <input type="text" id="title" placeholder="enter title" maxlength="20" required>
+            <input type="date" id="date" required>
+        </div>
+        
+        <div>
+            <img src="../images/tick.png" alt="tick-icon" id="save">
+            <select id="priority-options" required>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+            </select>
+            <img src="../images/x.png" alt="cross-icon" id="exit">
+        </div>
+        <textarea placeholder="Write something ..." maxlength="200"></textarea>
+    </dialog>
+    <main class="to-do">
+        <section class="side-bar">
+
+            <div class="side-bar-hdr">
+                <div>
+                    <h1>Projects</h1>
+                    <img id="prj-plus" src="../images/plus_img.png" alt="icon">
+                </div>
+                <input class="prj-input" type="text" maxlength="22" autofocus placeholder="Lorem">
+            </div>
+            
+            <div class="prj-list"><!-- storing js created project in here -->
+                <!-- <input id="prj-input" type="text" maxlength="23" autofocus> -->
+                 <p class="prj-name">this is fun project</p>
+            </div>
+        </section>
+
+        <nav class="nav">
+            <img src="../images/to-do.png" alt="logo icon">
+            <h1>To Do <span>UR</span> To Todos</h1>
+        </nav>
+
+        <section class="to-do-board">
+            <div class="to-do-labels">
+                <div class="priority-label">
+                    <p class="p-l">Low</p>
+                    <p class="p-m">Medium</p>
+                    <p class="p-h">High</p>
+                </div>
+                <img id="to-do-plus" src="../images/plus_img.png" alt="button img">
+            </div>
+
+            <div class="to-do-list">
+
+                <div class="to-dos">
+                    <label>
+                        <input type="checkbox" id="check">
+                        Title
+                    </label>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut adipisci quia voluptatum voluptas,
+                        nulla nemo.</p>
+                    <span class="p-h">Low</span>
+                    <img class="edit-icon" src="../images/edit-icon.png" alt="edit-icon">
+                    <img class="dlt-icon" src="../images/dlt-icon.png" alt="dlt-icon">
+                    <h4>2025-03-21</h4>
+                </div>
+                
+                <!-- <div class="to-dos">
+                    <h1>
+                        <input type="checkbox" name="hello" id="">
+                        hello
+                    </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut adipisci quia voluptatum voluptas,
+                        nulla nemo.</p>
+                    <span>High</span>
+                    <img id="edit-icon" src="../images/edit-icon.png" alt="edit-icon">
+                    <img id="dlt-icon" src="../images/dlt-icon.png" alt="dlt-icon">
+                    <h4>2025-03-21</h4>
+                </div>
+
+                <div class="to-dos">
+                    <h1>
+                        <input type="checkbox" name="hello" id="">
+                        hello
+                    </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut adipisci quia voluptatum voluptas,
+                        nulla nemo.</p>
+                    <span>High</span>
+                    <img id="edit-icon" src="../images/edit-icon.png" alt="edit-icon">
+                    <img id="dlt-icon" src="../images/dlt-icon.png" alt="dlt-icon">
+                    <h4>2025-03-21</h4>
+                </div>
+
+                <div class="to-dos">
+                    <h1>
+                        <input type="checkbox" name="hello" id="">
+                        hello
+                    </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut adipisci quia voluptatum voluptas,
+                        nulla nemo.</p>
+                    <span>High</span>
+                    <img id="edit-icon" src="../images/edit-icon.png" alt="edit-icon">
+                    <img id="dlt-icon" src="../images/dlt-icon.png" alt="dlt-icon">
+                    <h4>2025-03-21</h4>
+                </div> -->
+
+
+            </div>
+
+            <!-- <div class="cont">
+                <strong>This for header for the todo</strong>
+                <p>Date:2020-02-03</p>
+                <button>Open notes</button>
+                <input type="checkbox" name="checkbox">
+            </div> -->
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
