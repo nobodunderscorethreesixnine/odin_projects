@@ -23,3 +23,8 @@ link for Resturant Project
 https://nobodunderscorethreesixnine.github.io/resturant_page_odin_project/
 and link for Resturant Project code
 https://github.com/nobodunderscorethreesixnine/resturant_page_odin_project/tree/main
+
+link for ToDO Project 
+https://nobodunderscorethreesixnine.github.io/to_do_list_Odin_Project/
+and link for ToDo Project code
+https://github.com/nobodunderscorethreesixnine/to_do_list_Odin_Project?tab=readme-ov-file
