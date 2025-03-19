@@ -22,18 +22,18 @@
         </section>
 
         <dialog>
-            <form>
+            <form novalidate>
                 <div>
                     <label for="book-title">Enter Book Title:</label>
-                    <input type="text" name="book-title" id="book-title" placeholder="Half Girlfriend">
+                    <input type="text" name="book-title" id="book-title" placeholder="Half Girlfriend" required>
                 </div>
                 <div>
                     <label for="book-author">Enter Book Author:</label>
-                    <input type="text" name="book-author" id="book-author" placeholder="Chetan Bhagat">
+                    <input type="text" name="book-author" id="book-author" placeholder="Chetan Bhagat" required>
                 </div>
                 <div>
                     <label for="book-page">Enter Number of Pages:</label>
-                    <input type="number" name="book-pages" id="book-pages" placeholder="299">
+                    <input type="number" name="book-pages" id="book-pages" placeholder="299" required>
                 </div>
                 <div>
                     <label for="book-read">
@@ -41,7 +41,10 @@
                         <input type="checkbox" name="checkbox" id="book-read" checked>
                     </label>
                 </div>
-                <input type="submit" value="Sumbit" id="submit-btn">
+                <div class="btns">
+                    <input type="submit" value="Sumbit" id="submit-btn">
+                    <input type="button" value="Close" id="close-btn">
+                </div>
             </form>
         </dialog>
     </section>
