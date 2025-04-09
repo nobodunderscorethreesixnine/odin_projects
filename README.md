@@ -28,3 +28,8 @@ link for ToDO Project
 https://nobodunderscorethreesixnine.github.io/to_do_list_Odin_Project/
 and link for ToDo Project code
 https://github.com/nobodunderscorethreesixnine/to_do_list_Odin_Project?tab=readme-ov-file
+
+link for Weather Project
+https://nobodunderscorethreesixnine.github.io/weather_app_odin_project/
+and link for Weather Project code
+https://github.com/nobodunderscorethreesixnine/weather_app_odin_project
