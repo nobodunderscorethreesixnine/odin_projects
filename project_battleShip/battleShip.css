@@ -1,0 +1,57 @@
+h1 {
+	margin:0;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height:30px;
+	font-family:monospace;
+}
+
+.board {
+	margin-top: 50px;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+.player-board, .computer-board {
+	display:grid;
+	width:450px;
+	height:450px;
+}
+
+.randomise-btn {
+	display:block;
+	margin:40px auto;
+	border:none;
+	padding:8px;
+	border-radius:8px;
+	font-size:larger;
+	font-family:monospace;
+}
+
+.cells {
+	outline:1px solid rgba(128, 128, 128, 0.582);
+	position:relative;
+}
+
+.cells:hover{
+	outline:2px solid gray;
+	cursor:pointer;
+	animation: outline ease-in-out;
+}
+
+.ship-cells {
+	background-color:rgb(210, 230, 25);
+}
+
+.hit-cells:after{
+	content:'⚔️' ;
+	position:absolute;
+	font-size:xx-large;
+	background-color:rgb(221, 85, 85);
+}
+
+.miss-cells {
+	background-color:rgba(96, 245, 245, 0.226);
+}
