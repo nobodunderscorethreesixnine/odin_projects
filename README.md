@@ -35,3 +35,5 @@ and link for Weather Project code
 https://github.com/nobodunderscorethreesixnine/weather_app_odin_project
 
 link for Battle Ship game project https://nobodunderscorethreesixnine.github.io/odin_projects/project_battleShip/index.html
+
+link for HomePage project https://nobodunderscorethreesixnine.github.io/odin_projects/project_homepage/index.html
