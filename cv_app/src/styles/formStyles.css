@@ -1,0 +1,131 @@
+.form-container {
+	width: 100%;
+	max-width: 1000px;
+	padding: 40px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	transition: all 1.2s ease-out;
+	position: relative;
+}
+
+.form-container:hover {
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.form-container p {
+	position: relative;
+	max-width: 800px;
+	width: min(450px, 100%);
+}
+
+.form-container p + p {
+	margin-top: 30px;
+}
+
+.form-container .input {
+	width: 100%;
+	outline: none;
+	font-size: 1.5em;
+	padding: 20px 15px 8px 15px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	background: white;
+	transition: border-color 0.3s ease;
+}
+
+.form-container .input:focus {
+	border-color: #667eea;
+}
+
+.form-container .input:valid {
+	border-color: #48bb78;
+}
+
+.label {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	font-size: 1.4em;
+	color: #999;
+	background: white;
+	padding: 0 5px;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.form-container .input:focus + .label,
+.form-container .input:not(:placeholder-shown) + .label {
+	top: 0;
+	left: 10px;
+	font-size: 1.28em;
+	color: #667eea;
+	transform: translateY(-50%);
+}
+
+.form-container .input:valid:not(:placeholder-shown) + .label {
+	color: #48bb78;
+}
+
+/* styles for text area */
+.form-container textarea {
+	width: 100%;
+	min-height: 150px;
+	outline: none;
+	font-size: 1.3em;
+	padding: 15px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	background: white;
+	resize: none;
+	font-family: inherit;
+	transition: border-color 0.3s ease;
+	margin-top: 30px;
+}
+
+.form-container textarea:focus {
+	border-color: #667eea;
+}
+
+.form-container textarea:valid:not(:placeholder-shown) {
+	border-color: #48bb78;
+}
+
+/* styles for delete button */
+.dlt-btn {
+	background-color: rgba(239, 15, 15, 0.641);
+	clip-path: circle();
+	color: rgba(18, 17, 17, 0.921);
+	outline: none;
+	border: none;
+	padding: 10px;
+	font-size: clamp(1.4em, 4vw, 1.7em);
+	border-radius: 50%;
+
+	position: absolute;
+	top: -2px;
+	left: 5px;
+	transition: background-color 0.2s ease-in;
+}
+
+.dlt-btn:hover {
+	cursor: pointer;
+	background-color: rgba(239, 15, 15, 0.818);
+	color: black;
+}
+
+.dlt-btn:active {
+	cursor: pointer;
+	background-color: rgb(239, 15, 15);
+	color: black;
+}
+
+/* media queries*/
+@media (max-width: 456px) {
+	.form-container {
+		padding: 50px 10px 20px 10px;
+	}
+}

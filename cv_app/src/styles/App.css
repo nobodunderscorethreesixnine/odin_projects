@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	user-select: none;
+	touch-action: manipulation;
+}
+
+.cv-hdr {
+	padding: 1rem;
+	background: url("../assets/cv_header-bg_img.jpg") top / cover no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cv-hdr h1 {
+	text-shadow: 1px -2px 1px black;
+	font-size: 2.8rem;
+}
+
+.cv-hdr .pdf-btn {
+	height: 45px;
+	transition: all 0.4s;
+}
+
+.cv-hdr .pdf-btn:hover {
+	transform: skewY(4deg);
+	cursor: pointer;
+}
+
+.cv-hdr .pdf-btn:active {
+	transform: skewY(-1deg);
+}
+
+/* styles for main form */
+
+.cv-container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 30px auto 0px auto;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.cv-container-hdr {
+	display: flex;
+	justify-content: space-between;
+	max-width: 800px;
+	width: 100%;
+}
+
+.cv-container-hdr button {
+	font-family: Arial;
+	font-size: 1.8rem;
+	font-size: clamp(1.5rem, 3vw, 1.8rem);
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: border-bottom 0.5s ease, transform 0.7s ease;
+	border-bottom: 2px solid transparent;
+	color: rgb(68, 67, 67);
+}
+
+.cv-container-hdr button + button {
+	margin-left: 1rem;
+}
+
+.cv-container-hdr button:hover {
+	transform: translateY(-3px);
+	color: black;
+}
+
+/* toggling css between cv-container-hdr */
+.cv-container-hdr .active {
+	border-bottom-color: lightcoral;
+	color: black;
+	transform: translateY(-3px);
+}
+
+/* style for main footer -> submit button */
+.crud-btns {
+	padding: 8px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.crud-btns button {
+	border: none;
+	outline: none;
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	font-size: 1.8rem;
+	padding: 0.6em;
+	box-shadow: 0 2px 3px black;
+}
+
+.crud-btns button:hover {
+	cursor: pointer;
+}
+
+.crud-btns > :nth-child(2) {
+	font-size: 2em;
+}
+
+/* media queries */
+@media (max-width: 370px) {
+	.cv-container-hdr {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.8rem;
+	}
+
+	.cv-container-hdr .active {
+		transform: scale(1.4);
+	}
+
+	.cv-container-hdr button:hover {
+		transform: scale(1.4);
+	}
+}
