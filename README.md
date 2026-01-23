@@ -39,3 +39,5 @@ link for Battle Ship game project https://nobodunderscorethreesixnine.github.io/
 link for HomePage project https://nobodunderscorethreesixnine.github.io/odin_projects/project_homepage/index.html
 
 link for Cv App https://cvresume-app.netlify.app/
+
+link for Memory Game https://memorygame-369.netlify.app/
