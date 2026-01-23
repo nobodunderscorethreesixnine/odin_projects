@@ -1,0 +1,115 @@
+.game-wrapper {
+	width: 100%;
+	min-height: 100vh;
+	padding: clamp(1.2rem, 2vw, 2rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:space-around;
+	background: url("../assets/pokemonImages/battleGround.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow-y: auto;
+}
+
+.card-wrapper {
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card-wrapper__card {
+	height: 250px;
+	width: 200px;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 255, 255, 0.233),
+		rgba(255, 0, 0, 0.178)
+	);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	transform-style: preserve-3d;
+	transition:
+		transform 0.4s ease,
+		box-shadow 0.4s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+}
+
+.card-wrapper__card:hover {
+	transform: rotateY(15deg) rotateX(8deg) translateZ(40px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+.card-wrapper__card-img {
+	height: 80%;
+	width: 100%;
+}
+
+.card-wrapper__card-hdr {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.61);
+	border-radius: 50px;
+	width: 100%;
+	font-size: clamp(1rem, 2vw, 1.3rem);
+	color: whitesmoke;
+}
+
+/* styling modal view */
+
+.modal {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
+	background: rgba(0, 183, 255, 0.24);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal__content {
+	background-color: rgba(223, 211, 45, 0.966);
+	box-shadow: 10px 30px 40px black;
+	border-radius: 8px;
+	padding: 1rem;
+}
+
+.modal__info {
+	font-size: 5rem;
+}
+
+.game-wrapper__hdr p {
+	font-size: 1.4rem;
+}
+
+@media (max-width: 580px) {
+	.game-wrapper {
+		background-attachment: scroll;
+		padding: 0px;
+	}
+
+	.card-wrapper__card {
+		width: 150px;
+		height: 200px;
+	}
+
+	.card-wrapper {
+		justify-content: space-around;
+		gap: 10px;
+	}
+
+    .modal__info{
+        font-size:4rem;
+    }
+
+}

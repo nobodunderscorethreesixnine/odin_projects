@@ -1,0 +1,79 @@
+.slider-wrapper {
+	width: 200px;
+	position: relative;
+}
+
+.slider-wrapper__slider {
+	width: 100%;
+	appearance: none;
+	height: 10px;
+	background: linear-gradient(to right, white, yellow, orange);
+	border-radius: 8px;
+	outline: none;
+	cursor: grab;
+}
+
+.slider-wrapper__slider::-webkit-slider-thumb {
+	appearance: none;
+	width: 33px;
+	height: 33px;
+	background: url('../assets/pokemonImages/pokemonBall.png') no-repeat;
+	background-size: contain;
+	background-position:center;
+	cursor: grab;
+	border: none;
+	transition: transform 0.15s ease;
+}
+
+.slider-wrapper__slider::-moz-range-thumb {
+	appearance: none;
+	width: 33px;
+	height: 33px;
+	background: url('../assets/pokemonImages/pokemonBall.png') no-repeat;
+	background-size: contain;
+	background-position:center;
+	cursor: grab;
+	border: none;
+	transition: transform 0.15s ease;
+}
+
+.slider-wrapper__slider:active {
+	cursor: grabbing;
+}
+
+.slider-wrapper__slider:hover::-webkit-slider-thumb,
+.slider-wrapper__slider:hover::-moz-range-thumb {
+	transform: scale(1.15);
+}
+
+.slider-wrapper__slider:active::-webkit-slider-thumb,
+.slider-wrapper__slider:active::-moz-range-thumb:active {
+	cursor: inherit;
+	transform: scale(1.05);
+}
+
+.slider-wrapper__icons {
+	width: 100%;
+	position: absolute;
+	top: -45px;
+	left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0;
+	margin: 0;
+	pointer-events: none;
+}
+
+.slider-wrapper__icons img {
+    height:35px;
+    opacity:0.4;
+    filter:grayscale(70%);
+    transition: all 0.3s ease;
+}
+
+.slider-wrapper__icons img.active {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.2) translateY(-5px);
+}

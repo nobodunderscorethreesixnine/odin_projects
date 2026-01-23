@@ -1,0 +1,41 @@
+.starting-page {
+	margin-top: 1.5rem;
+	padding: clamp(1rem, 2vw, 3rem);
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.starting-page__nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* button animation */
+@keyframes shake-ball {
+	from {
+		transform: translateY(-10px);
+	}
+	to {
+		transform: translateY(10px);
+	}
+}
+
+/* styling starting button */
+.starting-page__start-btn .btn {
+	height: 300px;
+	animation: 1.3s shake-ball infinite alternate ease-in-out;
+	cursor:pointer;
+	clip-path: circle(50%);
+	
+}
+
+
+/* styling score board */
+.starting-page__score-board {
+	font-size: clamp(1.3rem, 2vw, 2rem);
+}
