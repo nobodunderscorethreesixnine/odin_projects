@@ -1,7 +1,7 @@
 import { useOutletContext } from "react-router";
 import QuantityStepper from "../Stepper/QuantityStepper";
 /* importing styles */
-import styles from "./cartPage.module.css";
+import styles from "./CartPage.module.css";
 
 export default function CartPage() {
 	const calculateTotalPrice = (accum, curValue) =>
