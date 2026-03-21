@@ -1,4 +1,7 @@
 .vscode
+# i will remove Test and **/Test/ folder in future
+Test/
+**/Test/
 
 #webpack and node files/dirs
 node_modules
