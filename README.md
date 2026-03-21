@@ -41,3 +41,5 @@ link for HomePage project https://nobodunderscorethreesixnine.github.io/odin_pro
 link for Cv App https://cvresume-app.netlify.app/
 
 link for Memory Game https://memorygame-369.netlify.app/
+
+link for Cart Page project https://nobodshop.netlify.app/
