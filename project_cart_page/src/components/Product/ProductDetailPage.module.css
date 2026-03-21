@@ -1,0 +1,38 @@
+.productDetailContainer {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items:center;
+  gap:1rem;
+}
+
+.productTitle {
+  font-size:xx-large;
+}
+
+.productImg {
+  width:100%;
+  max-width:400px;
+  min-width:250px;
+}
+
+.actionGrp {
+  margin:3rem 0px;
+}
+
+
+.addToCartBtn {
+  margin-top:1rem;
+}
+
+
+.productDesc {
+  color:gray;
+  font-size:smaller;
+}
+
+@media (max-width:900px) {
+  .productDetailContainer {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+

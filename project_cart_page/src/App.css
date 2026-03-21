@@ -1,0 +1,49 @@
+/* global styles */
+* {
+	font-family: monospace;
+	font-size: x-large;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: orange;
+	color: black;
+	padding: 8px;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+}
+
+button:hover {
+	background-color: rgba(255, 166, 0, 0.89);
+	cursor: pointer;
+}
+
+button:active {
+	background-color: orange;
+}
+
+.app-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app-container__hdr {
+	height: 10vh;
+}
+
+.app-container__content {
+	padding: 1rem;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.app-container__ftr {
+	height: 10vh;
+}

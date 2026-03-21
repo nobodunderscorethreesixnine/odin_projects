@@ -1,0 +1,20 @@
+.productCard {
+	border: 2px solid orange;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 300px;
+	padding-top: 1rem;
+}
+
+.productCard__img {
+	height: 5rem;
+	width:100%;
+}
+
+.addToCartBtn {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
