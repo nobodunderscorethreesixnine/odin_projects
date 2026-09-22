@@ -1,0 +1,16 @@
+<html>
+  <title><%=title%></title>
+  <body>
+    <div>
+      <a href="/new">new</a>
+    </div>
+    <div>
+      <% messages.forEach(msg=>{%>
+      <h1><%=msg.user%></h1>
+      <p><%=msg.text%></p>
+      <p><%= msg.added%></p>
+      <a href="/<%=msg.id%>">Open</a>
+      <%})%>
+    </div>
+  </body>
+</html>
