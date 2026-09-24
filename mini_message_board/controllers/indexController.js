@@ -33,6 +33,9 @@ function postMessage(req, res) {
 function getUser(req, res) {
   const { user } = req.params;
   const userMsg = messages.find((msg) => msg.id === Number(user));
+  if (!userMsg) {
+    return res.status(404).render("404");
+  }
   res.render("message", { msg: userMsg });
 }
 
