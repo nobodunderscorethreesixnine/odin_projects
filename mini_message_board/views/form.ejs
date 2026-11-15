@@ -1,11 +1,19 @@
+<%- include('partials/errors.ejs') %>
 <form method="POST" action="/new">
   <div>
     Author Name:
-    <input type="text" name="authorName" />
+    <input
+      type="text"
+      name="authorName"
+      required
+      value="<%=locals.authorName%>"
+    />
   </div>
   <div>
     Message:
-    <input type="text" name="msgText" />
+    <input type="text" name="msgText" required value="<%=locals.msgText%>" />
   </div>
   <button type="submit">submit</button>
 </form>
+
+<!-- once ask is this the correct way or not ? -->
