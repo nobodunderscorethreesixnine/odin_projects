@@ -15,7 +15,7 @@ insert into messages (message,username) values('Hello world!','wallace');
 `;
 
 async function main() {
-  conosole.log("seeding");
+  console.log("seeding");
   const client = new Client({
     connectionString: process.argv[2] || process.env.DB_URL,
   });

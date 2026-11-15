@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dbp": "node db/populatedb.js"
   },
   "dependencies": {
     "ejs": "^6.0.1",
