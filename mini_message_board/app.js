@@ -1,4 +1,6 @@
-process.loadEnvFile();
+try {
+  process.loadEnvFile();
+} catch (e) {}
 const express = require("express");
 const path = require("node:path");
 const { indexRouter } = require("./routes/indexRouter.js");
