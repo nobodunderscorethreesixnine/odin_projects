@@ -18,6 +18,7 @@ async function main() {
   console.log("seeding");
   const client = new Client({
     connectionString: process.argv[2] || process.env.DB_URL,
+    ssl: process.argv[2] ? { rejectUnauthorized: false } : false,
   });
   await client.connect();
   await client.query(SQL);
